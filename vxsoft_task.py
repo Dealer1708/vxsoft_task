@@ -15,7 +15,7 @@ status = ["Healthy","Unhealthy"]
 def start(message):
     while True:
         bot.send_message(message.chat.id, status[randint(0,1)])
-        sleep(randint(300,1000))
+        sleep(randint(3,10))
 
 bot.infinity_polling()
 #
